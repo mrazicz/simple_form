@@ -3,7 +3,7 @@ SimpleForm.setup do |config|
    # you need an updated simple_form gem for this to work, I'm referring to the git repo in my Gemfile
   config.input_class = "form-control"
  
-  config.wrappers :bootstrap, tag: 'div', class: 'form-group', error_class: 'error' do |b|
+  config.wrappers :bootstrap, tag: 'div', class: 'form-group', error_class: 'has-error' do |b|
     b.use :html5
     b.use :placeholder
     b.use :label
@@ -12,7 +12,7 @@ SimpleForm.setup do |config|
     b.use :hint,  wrap_with: { tag: 'p', class: 'help-block' }
   end
  
-  config.wrappers :group, tag: 'div', class: "form-group", error_class: 'error' do |b|
+  config.wrappers :group, tag: 'div', class: "form-group", error_class: 'has-error' do |b|
     b.use :html5
     b.use :placeholder
     b.use :label
